@@ -1,0 +1,11 @@
+ main.mobile-home {
+     @include container(100%);
+     width: 100%;
+     background: $bc-back;
+     float: left;
+ }
+ h4 {
+     font-size: 1.2rem;
+     text-transform: uppercase;
+     margin: 1em span(.5);
+ }
