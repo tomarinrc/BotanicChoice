@@ -5,6 +5,54 @@ body {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Open Sans Condensed", sans-serif; }
 
+aside {
+  max-width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80vw;
+  height: 100vh;
+  position: fixed;
+  left: -80vw;
+  background: #F5F5F5;
+  z-index: 999;
+  overflow-y: scroll;
+  transition: 200ms; }
+  aside:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  aside nav {
+    width: 80vw;
+    background: white;
+    position: fixed;
+    z-index: 1005; }
+  aside form {
+    width: 80vw;
+    position: fixed;
+    top: 12vh;
+    z-index: 1004; }
+  aside .mobile-links {
+    position: relative;
+    top: 18vh;
+    z-index: 1000; }
+  aside.show {
+    left: 0;
+    transition: 200ms; }
+
+.sidebar-overlay {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: black;
+  opacity: 0;
+  z-index: 997;
+  display: none;
+  transition: 200ms; }
+  .sidebar-overlay.show {
+    opacity: .80;
+    display: block;
+    transition: 200ms; }
+
 header {
   background: white; }
 
@@ -132,30 +180,20 @@ nav.navbar-mobile {
     width: 500vw; }
     .hero figure img {
       display: block;
-      float: left; }
-
-.hero-img-1 {
-  width: 100vw;
-  height: auto; }
+      float: left;
+      width: 100vw;
+      height: auto; }
 
 .hero-img-2 {
-  width: 100vw;
-  height: auto;
   left: 100vw; }
 
 .hero-img-3 {
-  width: 100vw;
-  height: auto;
   left: 200vw; }
 
 .hero-img-4 {
-  width: 100vw;
-  height: auto;
   left: 300vw; }
 
 .hero-img-5 {
-  width: 100vw;
-  height: auto;
   left: 400vw; }
 
 main.mobile-home {
@@ -174,5 +212,30 @@ h4 {
   font-size: 1.2rem;
   text-transform: uppercase;
   margin: 1em 4.16667%; }
+
+.mobile-links {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .mobile-links:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .mobile-links a {
+    color: rgba(0, 0, 0, 0.92); }
+  .mobile-links li {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+    display: block;
+    padding: 2em 4.16667%;
+    background: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
 
 /*# sourceMappingURL=style.css.map */

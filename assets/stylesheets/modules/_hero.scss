@@ -10,30 +10,20 @@
         img {
             display: block;
             float: left;
+            width: 100vw;
+            height: auto;
         }
     }
 }
-.hero-img-1 {
-    width: 100vw;
-    height: auto;
-}
 .hero-img-2 {
-    width: 100vw;
-    height: auto;
     left: 100vw;
 }
 .hero-img-3 {
-    width: 100vw;
-    height: auto;
     left: 200vw;
 }
 .hero-img-4 {
-    width: 100vw;
-    height: auto;
     left: 300vw;
 }
 .hero-img-5 {
-    width: 100vw;
-    height: auto;
     left: 400vw;
 }

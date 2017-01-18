@@ -1,0 +1,47 @@
+aside {
+    @include container(80vw);
+    width: 80vw;
+    height: 100vh;
+    position: fixed;
+    left: -80vw;
+    background: $bc-back;
+    z-index: 999;
+    overflow-y: scroll;
+    transition: 200ms;
+    nav {
+        width: 80vw;
+        background: white;
+        position: fixed;
+        z-index: 1005;
+    }
+    form {
+        width: 80vw;
+        position: fixed;
+        top: 12vh;
+        z-index: 1004;
+    }
+    .mobile-links {
+        position: relative;
+        top: 18vh;
+        z-index: 1000;
+    }
+    &.show {
+        left:0;
+        transition: 200ms;
+    }
+}
+.sidebar-overlay {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: black;
+    opacity: 0;
+    z-index: 997;
+    display: none;
+    transition: 200ms;
+    &.show {
+        opacity: .80;
+        display:block;
+        transition: 200ms;
+    }
+}
