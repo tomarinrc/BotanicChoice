@@ -3,10 +3,10 @@
     position: relative;
     float: left;
     overflow: hidden;
-    overflow-x: scroll;
+    //overflow-x: scroll;
     figure {
         margin: 0;
-        width: 500vw;
+        min-width: 10000vw;
         img {
             display: block;
             float: left;

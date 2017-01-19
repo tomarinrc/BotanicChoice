@@ -26,3 +26,21 @@
          border-bottom: 1px solid rgba(0, 0, 0, .08);
      }
  }
+ 
+ .mobile-slider {
+     @include container(100%);
+     position: relative;
+     float: left;
+     overflow: hidden;
+     overflow-x: scroll;
+     .mobile-slider-container {
+         margin: 0;
+         min-width: 10000vw;
+         a.mobile-slider-product {
+             display: block;
+             float: left;
+             width: 60vw;
+             height: 80vw;
+         }
+     }
+ }

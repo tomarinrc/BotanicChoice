@@ -169,15 +169,14 @@ nav.navbar-mobile {
   margin-right: auto;
   position: relative;
   float: left;
-  overflow: hidden;
-  overflow-x: scroll; }
+  overflow: hidden; }
   .hero:after {
     content: " ";
     display: block;
     clear: both; }
   .hero figure {
     margin: 0;
-    width: 500vw; }
+    min-width: 10000vw; }
     .hero figure img {
       display: block;
       float: left;
@@ -237,5 +236,26 @@ h4 {
     padding: 2em 4.16667%;
     background: white;
     border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
+
+.mobile-slider {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  float: left;
+  overflow: hidden;
+  overflow-x: scroll; }
+  .mobile-slider:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .mobile-slider .mobile-slider-container {
+    margin: 0;
+    min-width: 10000vw; }
+    .mobile-slider .mobile-slider-container a.mobile-slider-product {
+      display: block;
+      float: left;
+      width: 60vw;
+      height: 80vw; }
 
 /*# sourceMappingURL=style.css.map */
