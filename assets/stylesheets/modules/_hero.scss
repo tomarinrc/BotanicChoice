@@ -7,23 +7,28 @@
     figure {
         margin: 0;
         min-width: 10000vw;
-        img {
-            display: block;
-            float: left;
-            width: 100vw;
-            height: auto;
+        position: relative;
+        left: 0;
+    }
+    img {
+        display: block;
+        float: left;
+        width: 100vw;
+        height: auto;
+        &:last-of-type {
+            clear: right;
         }
     }
-}
-.hero-img-2 {
-    left: 100vw;
-}
-.hero-img-3 {
-    left: 200vw;
-}
-.hero-img-4 {
-    left: 300vw;
-}
-.hero-img-5 {
-    left: 400vw;
+    figcaption {
+        display: block;
+        float: left;
+        width: 100vw;
+        height: auto;
+        padding: 2em 4vw;
+        background: white;
+        box-sizing: border-box;
+        &:first-of-type {
+            clear: left;
+        }
+    }
 }

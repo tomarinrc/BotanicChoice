@@ -16,14 +16,19 @@
      padding: 0;
      @include container(100%);
      a {
-         color: rgba(0, 0, 0, .92);
+         color: $bc-text;
+         font-weight: 600;
      }
      li {
          @include span(12);
          display: block;
          padding: 2em span(.5);
          background: white;
-         border-bottom: 1px solid rgba(0, 0, 0, .08);
+         border-bottom: 1px solid $bc-border;
+         &.call-to-action {
+             background: $bc-lime;
+             color: white;
+         }
      }
  }
  
@@ -33,14 +38,65 @@
      float: left;
      overflow: hidden;
      overflow-x: scroll;
-     .mobile-slider-container {
+ }
+ 
+ .mobile-slider-container {
+     margin: 0;
+     min-width: 10000vw;
+ }
+ 
+ a.mobile-slider-product {
+     @include container();
+     display: block;
+     float: left;
+     width: 60vw;
+     height: auto;
+     background: white;
+     border: 1px solid $bc-border;
+     border-top: none;
+     text-decoration: none;
+     .product-image {
+         display: block;
+         width: auto;
+         height: 40vw;
+         margin: 4vw auto;
+     }
+     .product-details {
+         margin: -10vw 2vw 4vw;
+         padding: 1vw 0;
+         -webkit-box-shadow: 0px -10px 40px 10px rgba(255, 255, 255, 1);
+         -moz-box-shadow: 0px -10px 40px 10px rgba(255, 255, 255, 1);
+         box-shadow: 0px -10px 40px 10px rgba(255, 255, 255, 1);
+         background: white;
+         position: relative;
+         z-index: 1;
+     }
+     .product-name {
+         font-size: 1.2rem;
+         margin: .4em 0;
+         text-transform: uppercase;
+         text-align: center;
+         color: rgba($bc-text,0.92);
+     }
+     .product-tag {
+         font-size: 1rem;
+         margin: 0 0 .4em;
+         text-align: center;
+         font-weight: 400;
+         color: rgba($bc-text,0.8);
+     }
+     .product-count {
+         font-size: 1rem;
          margin: 0;
-         min-width: 10000vw;
-         a.mobile-slider-product {
-             display: block;
-             float: left;
-             width: 60vw;
-             height: 80vw;
-         }
+         text-align: center;
+         font-weight: 400;
+         color: rgba($bc-text,0.6);
+     }
+     .product-price {
+         font-size: 1.2rem;
+         margin: .4em 0 ;
+         text-align: center;
+         font-weight: 900;
+         color: $bc-price;
      }
  }
