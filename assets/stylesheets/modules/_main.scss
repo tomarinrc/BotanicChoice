@@ -6,6 +6,7 @@
  }
  
  h4 {
+	 @include container();
      font-size: 1.2rem;
      text-transform: uppercase;
      margin: 1em span(.5);
@@ -25,6 +26,10 @@
          padding: 2em span(.5);
          background: white;
          border-bottom: 1px solid $bc-border;
+         text-transform: uppercase;
+         .fa {
+	         float: right;
+         }
          &.call-to-action {
              background: $bc-lime;
              color: white;
@@ -35,7 +40,6 @@
  .mobile-slider {
      @include container(100%);
      position: relative;
-     float: left;
      overflow: hidden;
      overflow-x: scroll;
  }

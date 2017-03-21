@@ -26,8 +26,15 @@ aside {
     background: white;
     position: fixed;
     z-index: 1005; }
-  aside .search-mobile {
-    margin: 0; }
+  aside form {
+    width: 80vw;
+    position: fixed;
+    top: 12vh;
+    z-index: 1004; }
+  aside .mobile-links {
+    position: relative;
+    top: 18vh;
+    z-index: 1000; }
   aside.show {
     left: 0;
     transition: 200ms; }
@@ -52,15 +59,7 @@ header {
 nav.navbar-mobile {
   max-width: 100%;
   margin-left: auto;
-  margin-right: auto;
-  position: fixed;
-  top: 0;
-  background: white;
-  width: 100%;
-  z-index: 9;
-  -webkit-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.12);
-  -moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.12); }
+  margin-right: auto; }
   nav.navbar-mobile:after {
     content: " ";
     display: block;
@@ -116,8 +115,7 @@ nav.navbar-mobile {
   max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background: #70848F;
-  margin-top: 12vh; }
+  background: #70848F; }
   .search-mobile:after {
     content: " ";
     display: block;
@@ -144,7 +142,7 @@ nav.navbar-mobile {
     border: none; }
   .search-mobile-input button {
     position: absolute;
-    right: 4.16667%;
+    right: 8.33333%;
     border: none;
     background: none; }
     .search-mobile-input button img {
@@ -212,16 +210,9 @@ main.mobile-home {
     clear: both; }
 
 h4 {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   font-size: 1.2rem;
   text-transform: uppercase;
   margin: 1em 4.16667%; }
-  h4:after {
-    content: " ";
-    display: block;
-    clear: both; }
 
 .mobile-links {
   margin: 0;
@@ -247,10 +238,7 @@ h4 {
     display: block;
     padding: 2em 4.16667%;
     background: white;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-    text-transform: uppercase; }
-    .mobile-links li .fa {
-      float: right; }
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08); }
     .mobile-links li.call-to-action {
       background: #70BD77;
       color: white; }
@@ -260,6 +248,7 @@ h4 {
   margin-left: auto;
   margin-right: auto;
   position: relative;
+  float: left;
   overflow: hidden;
   overflow-x: scroll; }
   .mobile-slider:after {

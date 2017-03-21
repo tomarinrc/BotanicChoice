@@ -14,16 +14,17 @@ aside {
         position: fixed;
         z-index: 1005;
     }
-    form {
-        width: 80vw;
-        position: fixed;
-        top: 12vh;
-        z-index: 1004;
+    .search-mobile {
+	    margin: 0;
+        //width: 80vw;
+        //position: fixed;
+        //top: 12vh;
+        //z-index: 1004;
     }
     .mobile-links {
-        position: relative;
-        top: 18vh;
-        z-index: 1000;
+        //position: relative;
+        //top: 18vh;
+        //z-index: 1000;
     }
     &.show {
         left:0;
