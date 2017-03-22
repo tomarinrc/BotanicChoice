@@ -1,3 +1,14 @@
+body {
+	@include container(100%);
+}
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"], 
+input[type="search"] { -webkit-appearance: none; border-radius: 0; -webkit-border-radius:0; }
+* { -webkit-tap-highlight-color:transparent; }
+div, a, section, article, span, img, h1, h2, h3, h4, h5 ,h6 { -webkit-user-select:none; -moz-user-select:none; }
+ 
  main.mobile-home {
      @include container(100%);
      width: 100%;

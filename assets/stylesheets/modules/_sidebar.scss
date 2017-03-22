@@ -1,4 +1,4 @@
-aside {
+aside.sidebar {
     @include container(80vw);
     width: 80vw;
     height: 100vh;
@@ -8,6 +8,7 @@ aside {
     z-index: 999;
     overflow-y: scroll;
     transition: 200ms;
+    margin-top: -12vh;
     nav {
         width: 80vw;
         background: white;
@@ -40,8 +41,9 @@ aside {
     z-index: 997;
     display: none;
     transition: 200ms;
+    margin-top: -12vh;
     &.show {
-        opacity: .80;
+        opacity: .48;
         display:block;
         transition: 200ms;
     }
