@@ -32,14 +32,6 @@
             </a>
         </nav>-->
         <h4>Welcome Guest</h4>
-        <form class="search-mobile">
-            <div class="search-mobile-input">
-                <input type="search" name="Search" placeholder="Search by Keyword or Item #">
-                <button type="submit">
-                    <img src="assets/images/icon-search.svg">
-                </button>
-            </div>
-        </form>
         <h4>Shop By Category</h4>
         <ul class="mobile-links">
             <a href="#">
@@ -113,12 +105,15 @@
             <a class="navbar-mobile-cart" href="#">
                 <img alt="Cart-Image" src="assets/images/icon-cart.svg">
             </a>
+            <a class="navbar-mobile-search" href="#">
+                <img alt="Toggle-Search" src="assets/images/icon-search-g.svg">
+            </a>
         </nav>
         <form class="search-mobile">
             <div class="search-mobile-input">
                 <input type="search" name="Search" placeholder="Search by Keyword or Item #">
                 <button type="submit">
-                    <img src="assets/images/icon-search.svg">
+                    <i class="fa fa-search fa-flip-horizontal" aria-hidden="true"></i>
                 </button>
             </div>
         </form>
@@ -127,6 +122,8 @@
         </div>
     </header>
     <section class="hero">
+	    <i class="fa fa-chevron-left" aria-hidden="true"></i>
+	    <i class="fa fa-chevron-right" aria-hidden="true"></i>
         <figure>
             <a href='#'><img class="hero-img-1" src="assets/images/hero-1.jpg" /></a>
             <a href='#'><img class="hero-img-2" src="assets/images/hero-1.jpg" /></a>
@@ -139,6 +136,18 @@
             <figcaption>Sample Text 4</figcaption>
             <figcaption>Sample Text 5</figcaption>-->
         </figure>
+        <!--<div class="hero-shadows"></div>-->
+        <!--<nav class="hero-arrows">
+	        <i class="fa fa-chevron-left" aria-hidden="true"></i>
+	        <i class="fa fa-chevron-right" aria-hidden="true"></i>
+        </nav>-->
+        <nav class="hero-nav">
+	        <a class="slide-0 active"></a>
+	        <a class="slide-1"></a>
+	        <a class="slide-2"></a>
+	        <a class="slide-3"></a>
+	        <a class="slide-4"></a>
+        </nav>
     </section>
     <main class="mobile-home">
         <h4>Shop By Popular Categories</h4>
@@ -266,7 +275,18 @@
         </section>
     </main>
     <footer>
-		
+	    <form class="footer-signup">
+		    <h5>Discover Special Discounts and Coupons!</h5>
+            <div class="footer-signup-input">
+                <input type="search" name="E-Mail-Signup" placeholder="Enter E-Mail Address">
+                <button type="submit">
+                    Sign Up Now
+                </button>
+            </div>
+        </form>
+        <h5>Need Assistance?</h5>
+        <p>For help or to place an order feel free to give us a call during normal business hours.</p>
+		<tel><i class="fa fa-phone" aria-hidden="true"></i>&nbsp;&nbsp;1.800.644.8327</tel>
     </footer>
     <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous"></script>

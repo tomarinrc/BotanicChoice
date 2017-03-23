@@ -8,7 +8,6 @@ aside.sidebar {
     z-index: 999;
     overflow-y: scroll;
     transition: 200ms;
-    margin-top: -12vh;
     nav {
         width: 80vw;
         background: white;
@@ -41,7 +40,6 @@ aside.sidebar {
     z-index: 997;
     display: none;
     transition: 200ms;
-    margin-top: -12vh;
     &.show {
         opacity: .48;
         display:block;

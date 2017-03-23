@@ -1,5 +1,6 @@
 body {
 	@include container(100%);
+	background: $bc-back;
 }
 textarea,
 input[type="text"],
@@ -14,6 +15,7 @@ div, a, section, article, span, img, h1, h2, h3, h4, h5 ,h6 { -webkit-user-selec
      width: 100%;
      background: $bc-back;
      float: left;
+     
  }
  
  h4 {
@@ -53,6 +55,7 @@ div, a, section, article, span, img, h1, h2, h3, h4, h5 ,h6 { -webkit-user-selec
      position: relative;
      overflow: hidden;
      overflow-x: scroll;
+     -webkit-overflow-scrolling: touch;
  }
  
  .mobile-slider-container {

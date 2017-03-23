@@ -1,0 +1,76 @@
+footer {
+	@include container();
+	@include span(12);
+	margin-top: 2rem;
+	padding-top: 2rem;
+	background: $bc-silver;
+	border-top: 4px solid $bc-lime;
+	h5 {
+		margin: 0 span(.5) 1rem;
+		color: rgba(255, 255, 255, 0.92);
+		font-size: 1.6rem;
+		font-weight: 100;
+		text-transform: uppercase;
+		//text-align: center;
+	}
+	p {
+		margin: 0 span(.5) 1rem;
+		color: rgba(255, 255, 255, 0.92);
+		font-size: 1rem;
+	}
+	.footer-signup-input {
+		@include span(11);
+		margin: 0 span(.5) 2rem;
+		input {
+			@include span(7);
+	        padding: 1em span(.5);
+	        border: none;
+	        border-radius: 4px 0 0 4px;
+	        background: white;
+	        &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			  color: rgba(0,0,0,0.96);
+			  font-weight: 100;
+			  text-transform: capitalize;
+			}
+			&::-moz-placeholder { /* Firefox 19+ */
+			  color: rgba(0,0,0,0.96);
+			  font-weight: 100;
+			  text-transform: capitalize;
+			}
+			&:-ms-input-placeholder { /* IE 10+ */
+			  color: rgba(0,0,0,0.96);
+			  font-weight: 100;
+			  text-transform: capitalize;
+			}
+			&:-moz-placeholder { /* Firefox 18- */
+			  color: rgba(0,0,0,0.96);
+			  font-weight: 100;
+			  text-transform: capitalize;
+			}    
+		}
+		button {
+	        @include span(5);
+	        padding: 1em span(.5);
+	        border: none;
+	        border-radius: 0 6px 6px 0;
+	        background: $bc-orange;
+	        color: rgba(255,255,255,0.96);
+	        font-weight: 900;
+	    }
+	}
+	tel {
+		@include span(11);
+		background: $bc-lime;
+		border-radius: 6px;
+		margin: 0 span(.5) 1rem;
+		padding: .8em span(.5);
+		color: white;
+		font-size: 1.2rem;
+		font-weight: 900;
+		text-align: center;
+		border-bottom: 3px solid $bc-green;
+		i.fa {
+			font-size: 1.2rem;
+		}
+	}
+}
