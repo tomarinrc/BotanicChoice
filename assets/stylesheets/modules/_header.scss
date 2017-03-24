@@ -8,6 +8,7 @@ nav.navbar-mobile {
     @include container(100%);
     width: 100%;
     background: white;
+    border-bottom: 2px solid $bc-lime;
     /*position: fixed;
     top: 0;
     background: white;
@@ -26,54 +27,97 @@ nav.navbar-mobile {
 .navbar-mobile-menu {
     @include span(2);
     margin: 4.5vh 0;
+    @include breakpoint ($landscape) {
+	    @include span(1);
+	    margin: 5.5vh 0;
+    }
+    @include breakpoint ($tablet) {
+	    @include span(1);
+	    margin: 3.4vh 0;
+    }
     img {
         width: auto;
         height: 3vh;
         margin: auto;
+        @include breakpoint ($tablet) {
+	    	height: 2vh;
+    	}
     }
 }
 .navbar-mobile-logo {
     @include span(6);
     margin: 1vh 0;
+    @include breakpoint ($landscape) {
+	    @include span(9);
+    }
     img {
         width: auto;
         height: 8vh;
         margin: auto;
+        @include breakpoint ($landscape) {
+	    	float: left;
+	    	height: 10vh;
+    	}
+    	@include breakpoint ($tablet) {
+	    	height: 6vh;
+    	}
     }
 }
 .navbar-mobile-cart {
     @include span(2);
     margin: 4vh 0;
+    @include breakpoint ($landscape) {
+	    @include span(1);
+	    margin: 5vh 0;
+    }
+    @include breakpoint ($tablet) {
+	    @include span(1);
+	    margin: 3vh 0;
+    }
     img {
         width: auto;
         height: 4vh;
         margin: auto;
+        @include breakpoint ($tablet) {
+	    	height: 3vh;
+    	}
     }
 }
 .navbar-mobile-search {
     @include span(2);
     margin: 4vh 0;
+    @include breakpoint ($landscape) {
+	    @include span(1);
+	    margin: 5vh 0;
+    }
+    @include breakpoint ($tablet) {
+	    @include span(1);
+	    margin: 3vh 0;
+    }
     img {
         width: auto;
         height: 4vh;
         margin: auto;
+        @include breakpoint($tablet) {
+	        height: 3vh;
+        }
     }
 }
 .search-mobile {
     @include container(100%);
     position: relative;
-    top: -8vh;
+    top: -20vh;
     z-index: -999;
     width: 100%;
-    background: $bc-silver;
+    background: $bc-back;
     //margin-top: 12vh;
-    -webkit-box-shadow: inset 0px 0px 48px 0px rgba(0,0,0,0.48);
-	-moz-box-shadow: inset 0px 0px 48px 0px rgba(0,0,0,0.48);
-	box-shadow: inset 0px 0px 48px 0px rgba(0,0,0,0.48);
-	transition: 200ms;
+    -webkit-box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.08);
+	-moz-box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.08);
+	box-shadow: inset 0px 0px 16px 0px rgba(0,0,0,0.08);
+	transition: 400ms;
 	&.show {
 		top:0;
-		transition: 200ms;
+		transition: 220ms;
 	}
 }
 .search-mobile-input {
@@ -85,25 +129,21 @@ nav.navbar-mobile {
         border: none;
         border-radius: 0;
         background: none;
-        color: rgba(255,255,255,0.96);
+        color: rgba(0,0,0,0.96);
         &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-		  color: rgba(255,255,255,0.96);
-		  font-weight: 100;
+		  color: rgba(0,0,0,0.96);
 		  text-transform: capitalize;
 		}
 		&::-moz-placeholder { /* Firefox 19+ */
-		  color: rgba(255,255,255,0.96);
-		  font-weight: 100;
+		  color: rgba(0,0,0,0.96);
 		  text-transform: capitalize;
 		}
 		&:-ms-input-placeholder { /* IE 10+ */
-		  color: rgba(255,255,255,0.96);
-		  font-weight: 100;
+		  color: rgba(0,0,0,0.96);
 		  text-transform: capitalize;
 		}
 		&:-moz-placeholder { /* Firefox 18- */
-		  color: rgba(255,255,255,0.96);
-		  font-weight: 100;
+		  color: rgba(0,0,0,0.96);
 		  text-transform: capitalize;
 		}    
 	}
@@ -113,9 +153,9 @@ nav.navbar-mobile {
         border: none;
         background: none;
         margin: .36rem 0;
-        color: rgba(255,255,255,0.96);
+        color: rgba(0,0,0,0.96);
         i {
-	        color: rgba(255,255,255,0.96);
+	        color: rgba(0,0,0,0.96);
         }
     }
 }
@@ -128,14 +168,24 @@ nav.navbar-mobile {
     background: $bc-lime;
     padding: .5em;
     position: relative;
+    font-weight: bold;
     top: calc(-4vh - 2rem);
     box-sizing: border-box;
     -webkit-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.12);
 	-moz-box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.12);
 	box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.12);
-	transition: 200ms;
+	transition: 400ms;
+	@include breakpoint ($tablet) {
+		font-size: 1.2rem;
+	}
     &.show {
 	    top: 0;
-	    transition: 200ms;
+	    transition: 400ms;
+    }
+    i.fa {
+	    position: absolute;
+	    right: .5rem;
+	    font-size: .9rem;
+	    font-weight: 100;
     }
 }

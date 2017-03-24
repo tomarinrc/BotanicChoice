@@ -7,12 +7,39 @@ aside.sidebar {
     background: $bc-back;
     z-index: 999;
     overflow-y: scroll;
-    transition: 200ms;
+    transition: 400ms;
+    @include breakpoint ($landscape) {
+	    width: 48vw;
+    }
+    h3.sidebar-welcome {
+	 	font-size: 1.2rem;
+	 	text-transform: uppercase;
+	 	padding: 1em span(.5);
+	 	margin: 0;
+	 	background: $bc-silver;
+	 	color: rgba(255, 255, 255, .9);
+	 	font-weight: 100;
+	 	i.name {
+		 	font-style: italic;
+	 	}
+	 	.login {
+		    float: right;
+		    text-decoration: underline;
+		    font-family: Lato;
+		    font-size: 1rem;
+		    text-transform: none;
+		    font-weight: 400;
+		    float: right;
+	 	}
+ 	}
     nav {
         width: 80vw;
         background: white;
         position: fixed;
         z-index: 1005;
+        @include breakpoint ($landscape) {
+	    	width: 48vw;
+    	}
     }
     .search-mobile {
 	    margin: 0;
@@ -28,7 +55,7 @@ aside.sidebar {
     }
     &.show {
         left:0;
-        transition: 200ms;
+        transition: 400ms;
     }
 }
 .sidebar-overlay {
@@ -39,10 +66,10 @@ aside.sidebar {
     opacity: 0;
     z-index: 997;
     display: none;
-    transition: 200ms;
+    transition: 400ms;
     &.show {
         opacity: .48;
         display:block;
-        transition: 200ms;
+        transition: 400ms;
     }
 }

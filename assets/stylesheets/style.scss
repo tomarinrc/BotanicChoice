@@ -1,7 +1,9 @@
 @import 'plugins/susy/susy';
 @import 'plugins/susy/susy-config';
+@import 'plugins/breakpoint/breakpoint';
 @import 'modules/colors';
 @import 'modules/typography';
+@import 'modules/breakpoints';
 @import 'modules/sidebar';
 @import 'modules/header';
 @import 'modules/hero';

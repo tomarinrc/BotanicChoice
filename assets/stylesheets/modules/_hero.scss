@@ -3,13 +3,16 @@
     position: relative;
     float: left;
     overflow: hidden;
-    margin-top: calc(12vh + 1.7rem);
+    margin-top: calc(12vh + 1.9rem);
+    @include breakpoint ($tablet) {
+	    margin-top: calc(9vh + 2.4rem);
+    }
     figure {
         margin: 0;
         min-width: 10000vw;
         position: relative;
         left: 0;
-        transition: 200ms;
+        transition: 400ms;
     }
     img {
         display: block;

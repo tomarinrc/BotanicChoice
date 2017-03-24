@@ -73,11 +73,17 @@ div, a, section, article, span, img, h1, h2, h3, h4, h5 ,h6 { -webkit-user-selec
      border: 1px solid $bc-border;
      border-top: none;
      text-decoration: none;
+     @include breakpoint ($landscape) {
+	     width: 30vw;
+     }
      .product-image {
          display: block;
          width: auto;
          height: 40vw;
          margin: 4vw auto;
+	     @include breakpoint ($landscape) {
+		    height: 20vw;
+	     }
      }
      .product-details {
          margin: -10vw 2vw 4vw;
@@ -114,7 +120,7 @@ div, a, section, article, span, img, h1, h2, h3, h4, h5 ,h6 { -webkit-user-selec
          font-size: 1.2rem;
          margin: .4em 0 ;
          text-align: center;
-         font-weight: 900;
+         font-weight: bold;
          color: $bc-price;
      }
  }
